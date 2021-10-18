@@ -1,0 +1,7 @@
+
+//20211028
+//改行を消す方法
+    $input_line = fgets(STDIN);
+    $input_line = str_replace(array("\r\n", "\r", "\n"), '', $input_line);
+    echo $input_line.='!';
+//本当はもっといい方法あると思う
